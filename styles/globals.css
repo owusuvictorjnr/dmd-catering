@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,20 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+nav li {
+  @apply border-none rounded-md px-3 py-1 cursor-pointer text-lg tracking-tight hover:bg-[#CEF7E6]
+  scale-90 duration-500 hover:mb-4
+}
+
+footer{
+  @apply px-5   pt-4 
+}
+
+.primary-button{
+  @apply border-none rounded-md pt-2 py-2 px-3 mb-4 bg-amber-300 active:bg-amber-500 hover:bg-amber-400
+  
+}
+
+.card{
+  @apply mb-4 block rounded-lg border border-gray-200 shadow-md
 }
